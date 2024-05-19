@@ -1,8 +1,9 @@
-package com.sugrado.mongo_dynamic_search.core.services.search;
+package com.sugrado.mongo_dynamic_search.service.concretes;
 
-import com.sugrado.mongo_dynamic_search.core.services.search.models.DynamicFilter;
-import com.sugrado.mongo_dynamic_search.core.services.search.models.DynamicQuery;
-import com.sugrado.mongo_dynamic_search.core.services.search.models.DynamicSort;
+import com.sugrado.mongo_dynamic_search.dto.DynamicFilter;
+import com.sugrado.mongo_dynamic_search.dto.DynamicQuery;
+import com.sugrado.mongo_dynamic_search.dto.DynamicSort;
+import com.sugrado.mongo_dynamic_search.service.abstracts.SearchService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -38,7 +39,7 @@ public class SearchManager implements SearchService {
             if (filter.operator() == null)
                 throw new IllegalArgumentException("Operator must be provided for filtering");
         }
-
+        Criteria.where("").is("").andOperator(Criteria.where("").is(""));
         filters.stream()
                 .map(filter ->
                         switch (filter.operator()) {

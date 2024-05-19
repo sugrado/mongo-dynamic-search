@@ -1,10 +1,10 @@
-package com.sugrado.mongo_dynamic_search.business.concretes;
+package com.sugrado.mongo_dynamic_search.service.concretes;
 
-import com.sugrado.mongo_dynamic_search.business.abstracts.CustomerSearchService;
-import com.sugrado.mongo_dynamic_search.core.services.search.SearchService;
-import com.sugrado.mongo_dynamic_search.core.services.search.models.DynamicQuery;
-import com.sugrado.mongo_dynamic_search.data_access.abstracts.CustomerRepository;
-import com.sugrado.mongo_dynamic_search.entities.concretes.Customer;
+import com.sugrado.mongo_dynamic_search.dto.DynamicQuery;
+import com.sugrado.mongo_dynamic_search.model.Customer;
+import com.sugrado.mongo_dynamic_search.repository.CustomerRepository;
+import com.sugrado.mongo_dynamic_search.service.abstracts.CustomerSearchService;
+import com.sugrado.mongo_dynamic_search.service.abstracts.SearchService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

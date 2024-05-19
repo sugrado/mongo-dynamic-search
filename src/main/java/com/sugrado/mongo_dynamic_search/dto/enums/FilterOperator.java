@@ -1,4 +1,4 @@
-package com.sugrado.mongo_dynamic_search.core.services.search.enums;
+package com.sugrado.mongo_dynamic_search.dto.enums;
 
 public enum FilterOperator {
     EQUALS,

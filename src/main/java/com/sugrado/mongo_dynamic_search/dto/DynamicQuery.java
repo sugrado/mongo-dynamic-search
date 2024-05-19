@@ -1,4 +1,4 @@
-package com.sugrado.mongo_dynamic_search.core.services.search.models;
+package com.sugrado.mongo_dynamic_search.dto;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package com.sugrado.mongo_dynamic_search.api.controllers;
+package com.sugrado.mongo_dynamic_search.controller;
 
-import com.sugrado.mongo_dynamic_search.business.abstracts.CustomerSearchService;
-import com.sugrado.mongo_dynamic_search.core.services.search.models.DynamicQuery;
-import com.sugrado.mongo_dynamic_search.entities.concretes.Customer;
+import com.sugrado.mongo_dynamic_search.dto.DynamicQuery;
+import com.sugrado.mongo_dynamic_search.model.Customer;
+import com.sugrado.mongo_dynamic_search.service.abstracts.CustomerSearchService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

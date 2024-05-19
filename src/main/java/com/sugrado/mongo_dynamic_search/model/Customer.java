@@ -1,4 +1,4 @@
-package com.sugrado.mongo_dynamic_search.entities.concretes;
+package com.sugrado.mongo_dynamic_search.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,7 +8,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Getter
 @Setter
