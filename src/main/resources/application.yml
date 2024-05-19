@@ -1,0 +1,10 @@
+server:
+  port: 7006
+spring:
+  application:
+    name: mongo-dynamic-search
+  data:
+    mongodb:
+      database: mongo-dynamic-search
+      port: 27017
+      host: localhost
