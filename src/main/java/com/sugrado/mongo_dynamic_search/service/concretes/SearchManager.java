@@ -39,7 +39,7 @@ public class SearchManager implements SearchService {
             if (filter.operator() == null)
                 throw new IllegalArgumentException("Operator must be provided for filtering");
         }
-        Criteria.where("").is("").andOperator(Criteria.where("").is(""));
+
         filters.stream()
                 .map(filter ->
                         switch (filter.operator()) {
